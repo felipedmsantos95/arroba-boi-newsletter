@@ -1,7 +1,7 @@
 # Newsletter do Boi Gordo 🐃 🐂 🐄
 
 <p align="center">
-  <img src="https://github.com/felipedmsantos95/arroba-boi-newsletter/blob/master/img/fat_ox.jpg"/>
+  <img src="https://github.com/felipedmsantos95/arroba-boi-newsletter/blob/main/img/fat_ox.jpg"/>
 </p>
 
 ## Sobre
@@ -74,7 +74,7 @@ python3 src/email_preview.py
 ```
 
 <p align="center">
-  <img src="https://github.com/felipedmsantos95/arroba-boi-newsletter/blob/master/img/email_body.png"/>
+  <img src="https://github.com/felipedmsantos95/arroba-boi-newsletter/blob/main/img/email_body.png"/>
 </p>
 
 Em um navegador web acesse `http://localhost:5000/` para ver o corpo do email que será enviado
