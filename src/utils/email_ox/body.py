@@ -8,8 +8,8 @@ css = """\
 
       #fat_ox {
           padding-left: 7%;
-          width: 35%;
-          height: 45%;
+          width: 55%;
+          height: 65%;
       }
 
       #ox_table {

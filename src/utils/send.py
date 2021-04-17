@@ -1,22 +1,27 @@
 import smtplib, ssl
 
 from datetime import datetime
-from utils.email_ox.body import body
+from .email_ox.body import body
 from decouple import config # use .env to sensitive informations
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 #Configure your .env to use the variables bellow
-sender_email = config('mail_from')
-receiver_email = config('mail_to')
+# sender_email = config('mail_from')
+# receiver_email = config('mail_to').split(',')
+
+from_addr = config('mail_from')
 password = config('mail_password')
+
+#Workarround to hide email recipent list to user
+to_addr = ''
+recipients = config('mail_to').split(',')
 
 message = MIMEMultipart("alternative")
 message["Subject"] = "Cotação do Arroba do Boi"
-message["From"] = sender_email
-message["To"] = receiver_email
-
+message["From"] = from_addr
+message["To"] = to_addr
 
 # Turn these into plain/html MIMEText objects
 mime = MIMEText(body, "html")
@@ -26,15 +31,13 @@ mime = MIMEText(body, "html")
 message.attach(mime)
 
 
-def send_email():
+def email_ox():
     # Create secure connection with server and send email
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
-        server.login(sender_email, password)
+        server.login(from_addr, password)
         server.sendmail(
-            sender_email, receiver_email, message.as_string()
+            from_addr, [from_addr] + recipients , message.as_string()
         )
     now = datetime.now()
     print('Email sent at', now)
-
-send_email()

@@ -1,4 +1,3 @@
-import send_mail as send
 from utils.email_ox.body import body
 import http.server
 import socketserver
@@ -12,5 +11,5 @@ page.close()
 
 with socketserver.TCPServer(("", PORT), Handler) as http:
     print("Server running at port", PORT)
-    print("You can see a email preview in your web browser.")
+    print("You can see a email preview acessing http://localhost:5000/ in your local web browser.")
     http.serve_forever()
