@@ -65,7 +65,7 @@ mail_password=passwordExample
 
 ### Executando os scripts
 
-No diretório `./src` da raiz do projeto, nela contém três opções de script para serem executados.
+No diretório `./src` do projeto há três opções de script para serem executados.
 
 #### Visualizar prévia do email em seu navegador local
 
