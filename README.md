@@ -33,9 +33,9 @@ $ sudo pip3 install virtualenv
 Feito isso, dentro do diretório do projeto, podemos executar o seguinte: 
 
 ```bash
-$ virtualenv --python='/usr/bin/python3' whatsapp-bot-venv
+$ virtualenv --python='/usr/bin/python3' boi-venv
 $ source whatsapp-bot-venv/bin/activate
-(whatsapp-bot-venv) $ pip3 install http smtplib ssl socketserver decouple datetime email pynliner pandas requests bs4
+(boi-venv) $ pip3 install http smtplib ssl socketserver decouple datetime email pynliner pandas requests bs4
 ```
 NOTA: para verificar o diretório correto do Python 3 em seu sistema, pode-se executar `which python3`
 
