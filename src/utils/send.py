@@ -8,9 +8,6 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 #Configure your .env to use the variables bellow
-# sender_email = config('mail_from')
-# receiver_email = config('mail_to').split(',')
-
 from_addr = config('mail_from')
 password = config('mail_password')
 
