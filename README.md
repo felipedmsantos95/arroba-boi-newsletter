@@ -34,7 +34,7 @@ Feito isso, dentro do diretório do projeto, podemos executar o seguinte:
 
 ```bash
 $ virtualenv --python='/usr/bin/python3' boi-venv
-$ source whatsapp-bot-venv/bin/activate
+$ source boi-venv/bin/activate
 (boi-venv) $ pip3 install http smtplib ssl socketserver decouple datetime email pynliner pandas requests bs4
 ```
 NOTA: para verificar o diretório correto do Python 3 em seu sistema, pode-se executar `which python3`
