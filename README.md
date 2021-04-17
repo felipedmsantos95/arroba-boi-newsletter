@@ -67,10 +67,14 @@ mail_password=passwordExample
 
 No diretório `./src` do projeto há três opções de script para serem executados.
 
+```bash
+cd src
+```
+
 #### Visualizar prévia do email em seu navegador local
 
 ```bash
-python3 src/email_preview.py
+python3 email_preview.py
 ```
 
 <p align="center">
@@ -82,7 +86,7 @@ Em um navegador web acesse `http://localhost:5000/` para ver o corpo do email qu
 #### Enviar email instantaneamente
 
 ```bash
-python3 src/sendmail.py
+python3 sendmail.py
 ```
 
 #### Enviar email agendado
@@ -90,7 +94,7 @@ python3 src/sendmail.py
 Na configuração padrão, ao deixar o script rodando, um email será enviado todo sábado às 8h da manhã.
 
 ```bash
-python3 src/schedule_sendmail.py
+python3 schedule_sendmail.py
 ```
 
 No próprio arquivo existem comentários com outros exemplos de agendamento de envio.
