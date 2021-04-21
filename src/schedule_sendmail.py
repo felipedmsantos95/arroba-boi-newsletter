@@ -13,7 +13,7 @@ schedule.every().saturday.at("08:00").do(send.email_ox)
 #schedule.every(5).to(10).minutes.do(send.email_ox)
 #schedule.every().monday.do(send.email_ox)
 #schedule.every().minute.at(":34").do(send.email_ox)
-
+print('Schedule email will be sent every saturday..')
 while True:
     schedule.run_pending()
     time.sleep(1)
