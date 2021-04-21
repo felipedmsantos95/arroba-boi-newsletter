@@ -97,4 +97,4 @@ Na configuração padrão, ao deixar o script rodando, um email será enviado to
 python3 schedule_sendmail.py
 ```
 
-No próprio arquivo existem comentários com outros exemplos de agendamento de envio.
+No próprio arquivo existem comentários com outros exemplos de agendamento de envio. 
